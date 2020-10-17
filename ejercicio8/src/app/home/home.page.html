@@ -1,0 +1,13 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Flashlight
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" *ngIf="isTorch">
+  <ion-button expand="block" [color]="(isOn) ? 'danger' : 'success'" (click)="flashlightSwitch()">    
+    {{this.buttonText}}
+  </ion-button>
+</ion-content>
